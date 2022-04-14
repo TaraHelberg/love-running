@@ -14,7 +14,7 @@ body {
 
 /* headings and logo */
 
-h1,h2 {
+h1, h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -28,6 +28,7 @@ h1,h2 {
 }
 
 /* navigation links */
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -56,7 +57,7 @@ h1,h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero-image and cover text*/
+/* hero image and cover text */
 
 #hero-outer {
     height: 600px;
@@ -86,7 +87,6 @@ h1,h2 {
     from{
         transform: scale(1);
     }
-
     to{
         transform: scale(1.1);
     }
@@ -94,7 +94,7 @@ h1,h2 {
 
 #cover-text {
     font-size: 130%;
-    font-family: Oswald,sans-serif;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
 
@@ -121,7 +121,7 @@ h1,h2 {
 #left-about {
     padding-top: 30px;
     width: 33%;
-    float: left;    
+    float: left;
 }
 
 #right-about {
@@ -133,12 +133,12 @@ h1,h2 {
 #center-about {
     width: 33%;
     margin: 0 auto;
-    }
+}
 
 hr {
     border-top: 1px solid #3a3a3a;
     width: 100%;
-    margin: 5px;
+    margin: 5px 0;
 }
 
 .left-about-heading {
@@ -171,7 +171,7 @@ hr {
     font-size: 280%;
 }
 
-#center-container {
+#circle-container {
     width: 300px;
     height: 300px;
     padding: 30px;
@@ -200,7 +200,8 @@ hr {
 }
 
 #times div {
-    color: rgba(0, 0, 0, .6);
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
     width: 20%;
     height: 300px;
     float: left;
@@ -213,6 +214,8 @@ hr {
 #times h2 {
     color: #fafafa;
 }
+
+/* footer */
 
 footer {
     height: 150px;
@@ -233,13 +236,13 @@ footer {
     color: #3a3a3a;
 }
 
-/* galery */
+/* gallery */
 
 #photos {
     clear: both;
     line-height: 0;
     column-count: 4;
-    column-gap: 0;    
+    column-gap: 0;
 }
 
 #photos > img {
@@ -250,31 +253,43 @@ footer {
 
 /* For larger to medium screens size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
-#club-ethos {
-    width: 65%;
-    height: 1200px;
-    margin: 0 auto;
-}    
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
 
-#welcome {
-    padding: 30px 0;
-    margin: 0;    
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
 }
 
-#left-about, #right-about {
-    width: 100%;
-    float: left;
-    padding: 0;
-}
-
-#center-about {
-    clear: both;
-    width: 100%;
-    float: left;
-    padding: 0;
-}
-
-hr {
-    display: none;
-}
+/* For medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+    
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    } 
 }
